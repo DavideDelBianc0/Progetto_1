@@ -1,0 +1,1 @@
+export type Messaggio = {textToAdd: string; senderMess: boolean} //classe che inserisce il messaggio (textToAdd) con le caratteristiche visuali che dipendono dal mittente I/O o no

@@ -3,25 +3,19 @@ import Footer from './Footer'
 import Body from './Body'
 import React, { useState } from 'react'
 import Header from './Header'
+import { Messaggio } from './types'
 
 
 
 function App() {
 
-  const [risposta,SetRisposta]=useState("")
-  const [arr,addBodyMessage]=useState<Array<React.JSX.Element>>([])
-  const arrVisualizzare:React.JSX.Element[] = arr
+  const [arr,addBodyMessage]=useState<Array<Messaggio>>([])
+  // const arrVisualizzare:React.JSX.Element[] = arr
     function sendProp(ext:string):void
     {
-       SetRisposta(ext)
-       generaMessaggio(risposta , false)
+       addBodyMessage([...arr, {textToAdd:ext , senderMess:false}])
     }
-    function generaMessaggio(ext:string, sender:boolean)
-    {
-      const bd = <Body textToAdd={ext} senderMess={sender}></Body>
-      addBodyMessage([...arr, bd])
-      arrVisualizzare.push(bd)
-    }
+    //function generaMessaggio(messaggio:Messaggio) {return (<Body textToAdd={messaggio.textToAdd} senderMess={messaggio.senderMess}></Body>)}
 
   return (
     <>
@@ -30,7 +24,8 @@ function App() {
 
         <div id="contenitoreBody">
           {
-            arrVisualizzare
+            //arr.map(generaMessaggio)
+            arr.map((messaggio)=>{return (<Body textToAdd={messaggio.textToAdd} senderMess={messaggio.senderMess}></Body>)})
           }
         </div>
 
@@ -41,8 +36,6 @@ function App() {
     </>
   )
 }
-
-
 
 
 export default App

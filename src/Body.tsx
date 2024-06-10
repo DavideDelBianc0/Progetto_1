@@ -1,7 +1,8 @@
 import './Body.css'
-type messaggio = {textToAdd: string; senderMess: boolean}       //classe che inserisce il messaggio (textToAdd) con le caratteristiche visuali che dipendono dal mittente I/O o no
+import { Messaggio } from './types'
+      
 
-function Body(mess:messaggio) {
+function Body(mess:Messaggio) {
     function controllaTipo():string             //funzione che distingue i vari tipi di Id in caso di specifica modifica
     {
         let tipo: string =""
