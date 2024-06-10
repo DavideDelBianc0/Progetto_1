@@ -18,6 +18,8 @@ function Footer( {onSentFunction}:FooterProps ) {
         </>
 
     );
+
+
 }
 
 //function mess():string{
