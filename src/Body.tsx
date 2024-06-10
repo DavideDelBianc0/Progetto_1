@@ -1,3 +1,4 @@
+import './Body.css'
 type messaggio = {textToAdd: string; senderMess: boolean}       //classe che inserisce il messaggio (textToAdd) con le caratteristiche visuali che dipendono dal mittente I/O o no
 
 function Body(mess:messaggio) {
