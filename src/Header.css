@@ -1,0 +1,30 @@
+#contenitoreHeare{
+    height: 30px;
+    padding: 3px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#imgFreccia{
+    height: 100%;
+    width: auto;
+    float: left;
+}
+#imgLog{
+    height: 100%;
+    width: auto;
+    float: left;
+}
+div{
+    height: 24px;
+    width: auto;
+    float: left;
+    font-size: 18px;
+    padding: 3px;
+    color: black;
+}
+span{
+    font-size: 14px;
+    float: right;
+    color: grey;
+}
