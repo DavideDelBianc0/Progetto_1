@@ -14,14 +14,17 @@ function App() {
 
   return (
     <>
-      <Header nome='Gianpaolo' immagineURL='https://pierpippo.png' parentela='cogino'></Header>
-      <div id="contenitoreFooter">
-        <Footer onSentFunction={sendProp}></Footer>
-      </div>
-      
-      <div id="contenitoreBody">
-        <Body risposta={risposta}></Body>
-      </div>
+      <p id="contenitore">
+        <Header nome='Gianpaolo' immagineURL='https://pierpippo.png' parentela='cogino' ></Header>
+
+        <div id="contenitoreBody">
+          <Body risposta={risposta}></Body>
+        </div>
+
+        <div id="contenitoreFooter">
+          <Footer onSentFunction={sendProp}></Footer>
+        </div>
+      </p>
     </>
   )
 }

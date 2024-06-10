@@ -7,8 +7,8 @@ function Header(datiLog:infoLogPage){
             <div id="contenitoreHeader">
                 <img src={Freccia} id="imgFreccia"></img>
                 <img src={datiLog.immagineURL} id="imgLog"></img>
-                <div>{datiLog.nome}</div>
-                <span>{datiLog.parentela}</span>
+                <div id="nome">{datiLog.nome}</div>
+                <span id="parent">{datiLog.parentela}</span>
             </div>
         </>
     );

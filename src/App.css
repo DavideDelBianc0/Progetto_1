@@ -1,10 +1,22 @@
 #root {
-  max-width: 1280px;
+  max-width: 1600px;
   text-align: center;
 }
-p{
-  margin: 0 auto;
-  width: 1600px;
+#contenitore{
+  text-align: center;
+  width: 100%;
   height: auto;
   background-color: rgb(192, 215, 223);
+}
+#headerApp{
+  width: 100%;
+  display: block;
+}
+Body{
+  width: 100%;
+  display: block;
+}
+Footer{
+  width: 100%;
+  display: block;
 }

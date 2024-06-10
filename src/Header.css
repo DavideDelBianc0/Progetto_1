@@ -15,7 +15,7 @@
     width: auto;
     float: left;
 }
-div{
+#nome{
     height: 24px;
     width: auto;
     float: left;
@@ -23,7 +23,7 @@ div{
     padding: 3px;
     color: black;
 }
-span{
+#parent{
     font-size: 14px;
     float: right;
     color: grey;
