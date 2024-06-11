@@ -1,4 +1,4 @@
-#btnInvia{
+.btnInvia{
     size: 30px;
     border-radius: 100px;
     height: 30px;
@@ -6,11 +6,12 @@
     width: 30%;
     border: solid 1px rgb(203, 134, 49);
 }
-#barraInput{
+.barraInput{
     background-color: rgb(203, 134, 49);
     height: 30px;
-    width: 70%;
+    width: 60%;
     float: left;
+    background-color: aquamarine;
 }
 
 #casellaRisposta{

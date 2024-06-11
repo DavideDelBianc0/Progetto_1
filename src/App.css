@@ -2,6 +2,7 @@
   max-width: 1600px;
   text-align: center;
   width: 800px;
+  margin: auto;
 }
 #contenitore{
   text-align: center;
@@ -9,7 +10,7 @@
   height: auto;
   background-color: rgb(192, 215, 223);
 }
-#headerApp{
+ Header{
   width: 100%;
   display: block;
 }
@@ -17,7 +18,8 @@ Body{
   width: 100%;
   display: block;
 }
-Footer{
+#contenitoreFooter{
   width: 100%;
   display: block;
+  background-color: brown;
 }

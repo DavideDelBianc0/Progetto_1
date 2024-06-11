@@ -5,8 +5,8 @@ function Footer( {onSentFunction}:FooterProps ) {
     const [scritta, setScritta] = useState("")
     return (
         <>
-            <input type="text" id="barraInput" value={scritta} onChange={(e) => setScritta(e.target.value)}></input>
-            <input type='button' id="btnInvia" onClick={() => {
+            <input type="text" className="barraInput" value={scritta} onChange={(e) => setScritta(e.target.value)}></input>
+            <input type='button' className="btnInvia" onClick={() => {
                 {
                     onSentFunction(scritta)
                     setScritta("")
